@@ -45,7 +45,8 @@ muve ls                               # tus archivos (* = cifrado, L = copia loc
 muve put cancion.mp3 musica/          # subir
 muve put album/*.flac "musica/Mi Album/"
 muve get musica/cancion.mp3           # bajar (descifrado)
-muve cat musica/cancion.mp3 | mpv -   # reproducir mientras baja
+muve play musica/cancion.mp3          # reproducir con mpv mientras baja (se puede adelantar)
+muve play "musica/Mi Album/" --shuffle   # una carpeta como lista
 muve info musica/cancion.mp3          # detalles y versiones
 muve rm musica/cancion.mp3            # a la papelera
 muve restore musica/cancion.mp3       # sacarla de la papelera
